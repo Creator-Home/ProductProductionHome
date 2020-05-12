@@ -1,0 +1,574 @@
+/***************************** Body And Fonts ***************************/
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* font-family: 'Lato', sans-serif;
+
+font-family: 'Raleway', sans-serif;
+
+font-family: 'Lobster', cursive; */
+
+/***************************** NavBar CSS ***************************/
+
+.nav {
+  background-color: "transparent !important";
+}
+.nav__header {
+  font-family: "Lobster", cursive;
+  font-size: 1.7rem;
+  color: #fff !important;
+}
+.nav__links a {
+  font-family: "Comic Neue", cursive;
+  font-size: 1.3rem !important;
+  color: #fff !important;
+}
+.nav {
+  transition: 500ms ease;
+  background: transparent;
+}
+.nav.scrolled {
+  background: #373b40;
+  color: white !important;
+}
+.linkcolor.ncol {
+  color: #fff !important;
+}
+/* .animated_link4 a:before {
+  position: relative;
+  content: "";
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+  color: #333;
+  font-size: 0em;
+}
+
+.animated_link4 a:hover:before {
+  content: "\f061";
+  font-family: "FontAwesome";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #f2f2f2;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+} */
+
+/***************************** Banner CSS ***************************/
+#slider{
+  width: 100%;
+}
+.overlay:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.5;
+}
+.carousel-caption{
+  padding-bottom: 250px;
+  font-family: poppins;
+}
+.carousel-caption h2{
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+  font-family: 'Raleway', cursive;
+  margin-top: 19rem !important;
+}
+
+.carousel-item img{
+  width: 100%;
+  height: 50rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-caption{
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial!important;
+}
+.carousel-caption h5{
+  color: #fff;
+  font-size: 52px;
+}
+.parallax {
+  
+  background-image: url("./images/PB.jpg");
+  height: 50rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/***************************** Projects CSS ***************************/
+
+.header {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h1 {
+  display: block;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  color: rgb(49, 48, 48);
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header h1::before {
+  content: "PROJECTS";
+  color: rgba(220, 220, 220, 0.5);
+  font-size: 3rem;
+  display: block;
+  font-family: "Lobster", cursive;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.portfolio {
+  margin-bottom: 30px;
+}
+.port {
+  position: relative;
+  max-width: 100%;
+  height: 250px;
+  margin-bottom: 50px;
+}
+.port img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  cursor: pointer;
+}
+.port:hover .port-text {
+  width: 100%;
+  cursor: pointer;
+}
+.port-text {
+  width: 0%;
+  height: 250px;
+  background: rgba(14, 17, 20, 0.616);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.7s ease-in-out;
+}
+.port-text p {
+  color: white !important;
+  font-size: 20px;
+  border: 3px solid white !important;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+.port-col {
+  padding-bottom: 30px;
+}
+
+/*================ CounterUp Section Starts ===================*/
+.parallax2 {
+  background-image: linear-gradient(
+      rgba(10, 10, 12, 0.26),
+      rgba(7, 6, 7, 0.164)
+    ),
+    url("./images/BS.jpg");
+  /* Set a specific height */
+  height: 22rem;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stat {
+  padding-top: 0px;
+
+  background-attachment: fixed;
+  margin-top: 29px;
+}
+.stat-items {
+  border: none;
+  margin-top: 6rem;
+  transition: 1s;
+  padding-bottom: 20px;
+  height: 150px;
+}
+.stat-items .icon {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  color: #f1f1f1;
+}
+.stat p {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #d3d3d3;
+  font-size: 1.5rem;
+}
+.stat-items h2 {
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 768px) {
+  .parallax2 {
+    background-image: linear-gradient(
+        rgba(10, 10, 12, 0.26),
+        rgba(7, 6, 7, 0.164)
+      ),
+      url("./images/BS.jpg");
+    /* Set a specific height */
+    height: 50rem;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/*================ CounterUp Section Ends ===================*/
+
+/*================ Footer Section Ends ===================*/
+.footer {
+  background: #373b40;
+  margin-top: 2rem;
+}
+.footer__about {
+  margin: 2rem auto;
+}
+.footer__about h2 {
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.4rem;
+  color: whitesmoke;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footer__about h2::before {
+  content: "About Us";
+  color: rgba(220, 220, 220, 0.5);
+  font-size: 1.7rem;
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+.footer__about p {
+  color: whitesmoke;
+  font-family: "Comic Neue", cursive;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.map,
+.get__social {
+  margin: 2rem auto;
+}
+.map h1 {
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.4rem;
+  color: whitesmoke;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.map h1::before {
+  content: "Locate Us";
+  color: rgba(220, 220, 220, 0.5);
+  font-size: 1.7rem;
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+.get__social h1 {
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.4rem;
+  color: whitesmoke;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.get__social h1::before {
+  content: "Join Us";
+  color: rgba(220, 220, 220, 0.5);
+  font-size: 1.7rem;
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.get__social p {
+  color: whitesmoke;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.2rem;
+}
+
+.social_icons a {
+  text-decoration: none !important;
+}
+.get__social__form {
+  margin: 2rem 0;
+}
+.facebook {
+  color: white !important;
+  background-color: rgb(33, 66, 202);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 13px;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.5s ease-in-out;
+}
+.facebook:hover {
+  transform: translate(0, -15px);
+}
+
+.github {
+  color: white !important;
+  background-color: rgb(24, 26, 27);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 13px;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.5s ease-in-out;
+}
+.github:hover {
+  transform: translate(0, -15px);
+}
+
+.linkedin {
+  color: white !important;
+  background-color: rgb(50, 33, 202);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 13px;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.5s ease-in-out;
+}
+.linkedin:hover {
+  transform: translate(0, -15px);
+}
+.instagram {
+  color: white !important;
+  background-color: rgb(224, 12, 111);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 13px;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.5s ease-in-out;
+}
+.instagram:hover {
+  transform: translate(0, -15px);
+}
+.scroll_up .fas {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 3000;
+  color: white !important;
+  background-color: rgba(55, 57, 58, 0.548);
+  margin-right: 1rem;
+  font-size: 1rem;
+  border-radius: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 3rem;
+  transition: 0.5s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.scroll_up .fas:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(14, 9, 9);
+}
+
+/************************* About Page Style **********************/
+.about__parallax {
+  /* The image used */
+  background-image: url("./images/banner/home-banner.jpg");
+  /* Set a specific height */
+  height: 35rem;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about h1{
+  font-weight: bold;
+  font-family: 'Raleway', cursive;
+  font-size: 3rem;
+  margin-top: 17rem;
+  color: whitesmoke;
+}
+.breadcrumb {
+  background-color: transparent !important;
+  
+  text-align: center;
+}
+.breadcrumb-item {
+  color: whitesmoke !important;
+  font-size: 1.5rem;
+}
+.breadcrumb-item a {
+  color: rgb(101, 186, 255) !important;
+  font-size: 1.5rem;
+}
+.about__page {
+  margin-top: 4rem;
+}
+.left__side img {
+  margin-top: 3rem;
+}
+.right__side h5 {
+  font-family: "Comic Neue", cursive;
+  font-size: 1.7rem;
+}
+.right__side h1 {
+  font-family: "Lobster", cursive;
+}
+.right__side h6,
+p {
+  font-family: "Comic Neue", cursive;
+  font-size: 1.3rem;
+}
+.right__side h6 {
+  margin: 2rem 0;
+}
+
+/*********************** Right Column Cards **********************/
+.cards {
+  margin-top: 2rem;
+  height: 28rem;
+}
+.card {
+  border: 5px solid rgb(104, 104, 104);
+  border-radius: 5% !important;
+}
+.card__image img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: 5px solid rgb(104, 104, 104);
+}
+.card__text h4 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-family: "Comic Neue", cursive;
+}
+.card__text h5 {
+  color: rgb(24, 24, 24);
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: "Comic Neue", cursive;
+}
+.card__text p {
+  font-family: "Comic Neue", cursive;
+}
+
+.social_icons a {
+  text-decoration: none !important;
+}
+.team__header h1 {
+  display: block;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  color: rgb(49, 48, 48);
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.team__header h1::before {
+  content: "Meet The Team";
+  color: rgba(220, 220, 220, 0.5);
+  font-size: 3rem;
+  display: block;
+  font-family: "Lobster", cursive;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .breadcrumb li a{
+    margin-left: 5rem !important;
+  }
+  .about h1{
+    margin-left: 5rem !important;
+  }
+  .team__header h1 {
+    display: block;
+    font-family: "Lobster", cursive;
+    font-size: 1.3rem;
+    color: rgb(49, 48, 48);
+    margin: 0 auto;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .team__header h1::before {
+    content: "Meet The Team";
+    color: rgba(220, 220, 220, 0.5);
+    font-size: 2rem;
+    display: block;
+    font-family: "Lobster", cursive;
+    font-weight: 300;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+}
+
+/************************* Contact Page Style **********************/
+
+/************************* Projects Page Style **********************/
