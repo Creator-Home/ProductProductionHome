@@ -38,6 +38,9 @@ font-family: 'Lobster', cursive; */
 .linkcolor.ncol {
   color: #fff !important;
 }
+.active{
+  border: 1px solid whitesmoke !important;
+}
 /* .animated_link4 a:before {
   position: relative;
   content: "";
@@ -302,7 +305,7 @@ font-family: 'Lobster', cursive; */
   margin-bottom: 1rem;
 }
 .map h1::before {
-  content: "Locate Us";
+  content: "Become One Of Us";
   color: rgba(220, 220, 220, 0.5);
   font-size: 1.7rem;
   display: block;
@@ -433,142 +436,3 @@ font-family: 'Lobster', cursive; */
   background-color: rgb(14, 9, 9);
 }
 
-/************************* About Page Style **********************/
-.about__parallax {
-  /* The image used */
-  background-image: url("./images/banner/home-banner.jpg");
-  /* Set a specific height */
-  height: 35rem;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.about h1{
-  font-weight: bold;
-  font-family: 'Raleway', cursive;
-  font-size: 3rem;
-  margin-top: 17rem;
-  color: whitesmoke;
-}
-.breadcrumb {
-  background-color: transparent !important;
-  
-  text-align: center;
-}
-.breadcrumb-item {
-  color: whitesmoke !important;
-  font-size: 1.5rem;
-}
-.breadcrumb-item a {
-  color: rgb(101, 186, 255) !important;
-  font-size: 1.5rem;
-}
-.about__page {
-  margin-top: 4rem;
-}
-.left__side img {
-  margin-top: 3rem;
-}
-.right__side h5 {
-  font-family: "Comic Neue", cursive;
-  font-size: 1.7rem;
-}
-.right__side h1 {
-  font-family: "Lobster", cursive;
-}
-.right__side h6,
-p {
-  font-family: "Comic Neue", cursive;
-  font-size: 1.3rem;
-}
-.right__side h6 {
-  margin: 2rem 0;
-}
-
-/*********************** Right Column Cards **********************/
-.cards {
-  margin-top: 2rem;
-  height: 28rem;
-}
-.card {
-  border: 5px solid rgb(104, 104, 104);
-  border-radius: 5% !important;
-}
-.card__image img {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  border: 5px solid rgb(104, 104, 104);
-}
-.card__text h4 {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  font-family: "Comic Neue", cursive;
-}
-.card__text h5 {
-  color: rgb(24, 24, 24);
-  font-weight: bold;
-  text-transform: capitalize;
-  font-family: "Comic Neue", cursive;
-}
-.card__text p {
-  font-family: "Comic Neue", cursive;
-}
-
-.social_icons a {
-  text-decoration: none !important;
-}
-.team__header h1 {
-  display: block;
-  font-family: "Lobster", cursive;
-  font-size: 2rem;
-  color: rgb(49, 48, 48);
-  margin: 0 auto;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.team__header h1::before {
-  content: "Meet The Team";
-  color: rgba(220, 220, 220, 0.5);
-  font-size: 3rem;
-  display: block;
-  font-family: "Lobster", cursive;
-  font-weight: 300;
-  letter-spacing: 10px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  font-weight: bold;
-}
-@media only screen and (max-width: 768px) {
-  .breadcrumb li a{
-    margin-left: 5rem !important;
-  }
-  .about h1{
-    margin-left: 5rem !important;
-  }
-  .team__header h1 {
-    display: block;
-    font-family: "Lobster", cursive;
-    font-size: 1.3rem;
-    color: rgb(49, 48, 48);
-    margin: 0 auto;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .team__header h1::before {
-    content: "Meet The Team";
-    color: rgba(220, 220, 220, 0.5);
-    font-size: 2rem;
-    display: block;
-    font-family: "Lobster", cursive;
-    font-weight: 300;
-    letter-spacing: 10px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    font-weight: bold;
-  }
-}
-
-/************************* Contact Page Style **********************/
-
-/************************* Projects Page Style **********************/
