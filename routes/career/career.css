@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+
+/***************************** NavBar CSS ***************************/
+
+.nav {
+  background-color: "transparent !important";
+}
+.nav__header {
+  font-family: "Lobster", cursive;
+  font-size: 1.7rem;
+  color: #fff !important;
+}
+.nav__links a {
+  font-family: "Comic Neue", cursive;
+  font-size: 1.3rem !important;
+  color: #fff !important;
+}
+.nav {
+  transition: 500ms ease;
+  background: transparent;
+}
+.nav.scrolled {
+  background: #373b40;
+  color: white !important;
+}
+.linkcolor.ncol {
+  color: #fff !important;
+}
+.active {
+  border: 1px solid whitesmoke !important;
+}
+/* .animated_link4 a:before {
+    position: relative;
+    content: "";
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+    color: #333;
+    font-size: 0em;
+  }
+  
+  .animated_link4 a:hover:before {
+    content: "\f061";
+    font-family: "FontAwesome";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #f2f2f2;
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+  } */
+
+/***************************** Banner CSS ***************************/
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(7, 6, 7, 0.801)),
+    url("../../images/banner/home-banner.jpg");
+  /* Set a specific height */
+  height: 30rem;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bread {
+  background: none;
+  text-align: center;
+  margin: 12rem auto;
+}
+.bread a {
+  text-decoration: none;
+  font-family: "Comic Neue", cursive;
+}
+.home__a {
+  font-size: 1.3rem;
+  color: whitesmoke;
+}
+.bread span {
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+.career__a {
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+/***************************** ALL COURSES CSS ***************************/
+.card {
+  border: none !important;
+  font-family: "Comic Neue", cursive;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+.course__header {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card__img img {
+  height: 10rem;
+  width: 100%;
+}
+.card__link a {
+  text-decoration: none;
+}
+.course__header h1 {
+  display: block;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  color: rgb(49, 48, 48);
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.course__details {
+  padding: 1rem;
+}
+
+.card__title h5 {
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
+.card__details p {
+  font-size: 1rem;
+  color: grey;
+}
+.auth__img {
+  margin: 1px auto;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+.auth__name {
+  margin-top: 0.5rem;
+}
+.card__duration {
+  margin-top: 1rem;
+}
+.card__duration p {
+  font-size: 15px;
+  color: grey;
+}
+.scroll_up .fas {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 3000;
+  color: white !important;
+  background-color: rgba(55, 57, 58, 0.548);
+  margin-right: 1rem;
+  font-size: 1rem;
+  border-radius: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 3rem;
+  transition: 0.5s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.scroll_up .fas:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(14, 9, 9);
+}
