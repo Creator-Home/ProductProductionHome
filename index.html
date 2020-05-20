@@ -11,9 +11,9 @@
     <script src="https://kit.fontawesome.com/bf2b6b92c7.js" crossorigin="anonymous"></script>
 
 
-    <!----------------- AOS ------------>
+    <!----------------- AOS, Owl Carousel ------------>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
 
     <link rel="stylesheet" href="./style.css">
     <title>Product Production Home</title>
@@ -34,9 +34,10 @@
                         class="sr-only">(current)</span></a>
                 <a class="nav-item linkcolor nav-link pr-5" href="#">About</a>
                 <a class="nav-item linkcolor nav-link pr-5" href="#">Blog</a>
-                <a class="nav-item linkcolor nav-link pr-5" href="#">Careers</a>
+                <a class="nav-item linkcolor nav-link pr-5" href="./routes/career/career.html">Career</a>
                 <a class="nav-item linkcolor nav-link pr-5" href="#">Contact Us</a>
-                <a class="nav-item linkcolor nav-link pr-5 active" href="./routes/registration/registration.html">Get Started</a>
+                <a class="nav-item linkcolor nav-link pr-5 active" href="./routes/registration/registration.html">Get
+                    Started</a>
             </div>
         </div>
     </nav>
@@ -47,7 +48,8 @@
     <section>
         <!--------SLIDER-------->
         <div id="slider">
-            <div id="headerSlider carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1000">
+            <div id="headerSlider carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel"
+                data-interval="1000">
 
                 <div class="carousel-inner">
                     <div class="carousel-item active overlay">
@@ -58,7 +60,7 @@
                                 Product Production Home<br>
                                 by<br>
                                 The Creator Home
-                            
+
                         </div>
                     </div>
                     <div class=" carousel-item overlay">
@@ -84,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -93,7 +95,7 @@
 
     <!------------------------- Portfolio Starts --------------------------------------->
     <section>
-        <div class="container">
+        <div class="container portfolio">
             <div class="row text-center" data-aos="slide-up" data-aos-duration="1000">
                 <div class="header">
                     <h1></h1>
@@ -161,7 +163,7 @@
 
     <!--================== SCROLL SECTION ========================-->
     <div class="scroll_up">
-        <a data-scroll href="#top"><i class="fas fa-arrow-up"></i></a></i>
+        <a data-scroll href="#top" class="linkcolor"><i class="fas fa-arrow-up"></i></a></i>
     </div>
 
 
@@ -197,6 +199,21 @@
 
     <!--================== COUNTER UP SECTION ENDS========================-->
 
+    <!--================== COURSES SECTION STARTS========================-->
+    <section id="courses">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class=" header courses">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+
+
     <!--================== FOOTER SECTION STARTS========================-->
 
     <section>
@@ -205,17 +222,23 @@
                 <div class="col-md-4">
                     <div class="footer__about">
                         <h2 class="text-center">About Us</h2>
-                        <p>Product Production Home is a developing company comes under "THE CREATOR HOME" which provides the facility of Development together with spreading technical information among young Developers. 
-                            We implement Research papers of various technology stack and try to figure out the limitation of thesis. We give the best by utilizing the best. 
-                            We try our level best to full fill every requirement of our clients. We are growing at a good rate.</p>
+                        <p>Product Production Home is a developing company comes under "THE CREATOR HOME" which provides
+                            the facility of Development together with spreading technical information among young
+                            Developers.
+                            We implement Research papers of various technology stack and try to figure out the
+                            limitation of thesis. We give the best by utilizing the best.
+                            We try our level best to full fill every requirement of our clients. We are growing at a
+                            good rate.</p>
                     </div>
                 </div>
-               <div class="col-md-4">
+                <div class="col-md-4">
                     <div class="map">
                         <h1 class="text-center">Become one of us</h1>
                         <p style="color: whitesmoke;">
-                        We welcome every one who want to learn new technology stack or have any requirement of any kind of technical stack.<br>
-                        you will learn to work in production environment to a great extend and will able to deliver any client requirements. 
+                            We welcome every one who want to learn new technology stack or have any requirement of any
+                            kind of technical stack.<br>
+                            you will learn to work in production environment to a great extend and will able to deliver
+                            any client requirements.
                         </p>
                     </div>
                 </div>
@@ -243,7 +266,8 @@
                         </form>
                     </div>
                     <div class="social_icons text-left">
-                        <a href="https://www.facebook.com/groups/254137079079912/"> <i class="fab fa-facebook-f facebook"></i>
+                        <a href="https://www.facebook.com/groups/254137079079912/"> <i
+                                class="fab fa-facebook-f facebook"></i>
                         </a>
                         <a href="https://github.com/Creator-Home"> <i class="fab fa-github github"></i> </a>
                         <a href=""> <i class="fa fa-envelope linkedin"></i> </a>
@@ -284,6 +308,7 @@
     <!------------------ Other Plugins ---------------------->
     <script src="./assets/js/jquery.waypoints.min.js"></script>
     <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
     </script>
@@ -300,6 +325,8 @@
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
         });
     </script>
+    
+    
     <!------------------ Navlinks Color Change On scroll ---------------------->
     <script>
         $(window).scroll(function () {
@@ -310,6 +337,7 @@
             }
         });
     </script>
+   
     <!------------------ Counter Up ---------------------->
     <script>
         jQuery(document).ready(function () {
@@ -328,7 +356,7 @@
     <!------------------ Smooth Scoll --------------------->
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 1000,
+            speed: 2000,
             speedAsDuration: true
         });
     </script>

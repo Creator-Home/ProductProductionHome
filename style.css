@@ -39,7 +39,8 @@ font-family: 'Lobster', cursive; */
   color: #fff !important;
 }
 .active{
-  border: 1px solid whitesmoke !important;
+  text-align: center;
+  border: 1px dashed whitesmoke !important;
 }
 /* .animated_link4 a:before {
   position: relative;
@@ -255,7 +256,32 @@ font-family: 'Lobster', cursive; */
 
 /*================ CounterUp Section Ends ===================*/
 
-/*================ Footer Section Ends ===================*/
+/*================ Courses Section Starts ===================*/
+#courses{
+  background-color: rgba(220, 220, 220, 0.5);
+}
+
+.courses h1 {
+  display: block;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  color: whitesmoke;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.courses h1::before {
+  content: "COURSES";
+  color: #373b40;
+  font-size: 3rem;
+  display: block;
+  font-family: "Lobster", cursive;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+/*================ Footer Section Starts ===================*/
 .footer {
   background: #373b40;
   margin-top: 2rem;

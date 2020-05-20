@@ -4,69 +4,88 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="icon" href="../../images/LOGO.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!----------------- Bootstrap, Font Awesome & Custom CSS ------------>
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/bf2b6b92c7.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!----------------- Bootstrap, Font Awesome & Custom CSS ------------>
+	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/bf2b6b92c7.js" crossorigin="anonymous"></script>
 
 
-    <!----------------- AOS ------------>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!----------------- AOS ------------>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
-    <link rel="stylesheet" href="./registration.css">
-    <title>Product Production Home</title>
+	<link rel="stylesheet" href="./registration.css">
+	<title>Product Production Home</title>
 </head>
 
 <body>
+	<!------------------------- Navigation Starts --------------------------------------->
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark nav fixed-top ">
+		<a class="navbar-brand linkcolor nav__header mt-2 ml-5" href="#">Product Production Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav ml-auto mr-5 animated_link4 nav__links">
+				<a class="nav-item linkcolor nav-link  pr-5" href="../../index.html">Home <span
+						class="sr-only">(current)</span></a>
+				<a class="nav-item linkcolor nav-link pr-5" href="#">About</a>
+				<a class="nav-item linkcolor nav-link pr-5" href="#">Blog</a>
+				<a class="nav-item linkcolor nav-link pr-5" href="#">Careers</a>
+				<a class="nav-item linkcolor nav-link pr-5" href="#">Contact Us</a>
+			</div>
+		</div>
+	</nav>
 
+	<!------------------------- Navigation Ends --------------------------------------->
 
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Create Account</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Sign in</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<button class="ghost" id="signUp">Sign Up</button>
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<form action="#">
+				<h1>Register</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>or use your email for registration</span>
+				<input type="text" placeholder="Name" />
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<button>Sign Up</button>
+			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form action="#">
+				<h1>Sign in</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>or use your account</span>
+				<input type="email" placeholder="Email" />
+				<input type="password" placeholder="Password" />
+				<a href="#">Forgot your password?</a>
+				<button>Sign In</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Welcome Back!</h1>
+					<p>To keep connected with us please login with your personal info</p>
+					<button class="ghost" id="signIn">Sign In</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>Hello, Friend!</h1>
+					<p>Enter your personal details and start journey with us</p>
+					<button class="ghost" id="signUp">Sign Up</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 
 
@@ -74,25 +93,25 @@
 
 
 
-    <!------------------ jQuery, Popper & Bootstrap JS ---------------------->
-    <script src="../../assets/js/jquery-3.4.1.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
+	<!------------------ jQuery, Popper & Bootstrap JS ---------------------->
+	<script src="../../assets/js/jquery-3.4.1.min.js"></script>
+	<script src="../../assets/js/bootstrap.min.js"></script>
 
 
 
-    <script>
-        const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+	<script>
+		const signUpButton = document.getElementById('signUp');
+		const signInButton = document.getElementById('signIn');
+		const container = document.getElementById('container');
 
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
+		signUpButton.addEventListener('click', () => {
+			container.classList.add("right-panel-active");
+		});
 
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
-    </script>
+		signInButton.addEventListener('click', () => {
+			container.classList.remove("right-panel-active");
+		});
+	</script>
 </body>
 
 </html>
