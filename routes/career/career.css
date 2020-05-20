@@ -168,3 +168,7 @@
   color: rgb(255, 255, 255) !important;
   background-color: rgb(14, 9, 9);
 }
+.fab{
+  color: blue !important;
+  text-align: right;
+}
