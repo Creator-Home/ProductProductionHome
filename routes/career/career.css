@@ -105,6 +105,7 @@
 }
 .card__link a {
   text-decoration: none;
+  list-style-type: none;
 }
 .course__header h1 {
   display: block;
