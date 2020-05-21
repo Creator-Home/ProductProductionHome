@@ -3,11 +3,17 @@
         "crossorigin",
         "dehradun",
         "divakar",
+        "feature",
+        "font",
         "garg",
         "hardik",
+        "language",
         "linkcolor",
         "linkedin",
-        "macziom"
+        "macziom",
+        "moz",
+        "override",
+        "settings"
     ],
     "liveServer.settings.port": 5501
 }

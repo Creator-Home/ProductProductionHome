@@ -112,6 +112,129 @@ font-family: 'Lobster', cursive; */
   background-repeat: no-repeat;
   background-size: cover;
 }
+/***************************** Services CSS ***************************/
+.text h3 {
+  color: whitesmoke;
+}
+.text{
+	color: whitesmoke;
+	text-align: center;
+}
+
+
+.folded-corner:hover .text{
+	visibility: visible;
+	color: #000000;;
+}
+.Services-tab{
+	margin-top:20px;
+	
+
+}
+
+/*
+  nav link items
+*/
+.folded-corner{
+  padding: 25px 25px;
+  position: relative;
+  font-size: 90%;
+  text-decoration: none;
+  color: #999; 
+  background: transparent;
+  transition: all ease .5s;
+  border: 1px solid rgba(31,181,172,.9);
+}
+.folded-corner:hover{
+	background-color: rgba(4, 5, 5, 0.5);
+}
+
+/*
+  paper fold corner
+*/
+
+.folded-corner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 0px 0px 0;
+  border-color: #ddd #000;
+  transition: all ease .3s;
+}
+
+/*
+  on li hover make paper fold larger
+*/
+.folded-corner:hover:before {
+	background-color: #D00003;
+  border-width: 0 50px 50px 0;
+  border-color: #eee #000;
+  
+}
+
+.service_tab_1{
+	background-color: #373b40;
+}
+.service_tab_1:hover .fa-icon-image{
+    color: #000;
+    transform: rotate(360deg) scale(1.5);
+}
+
+
+.fa-icon-image{
+	color: rgba(31,181,172,.9);
+	display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size-adjust: none;
+    font-stretch: normal;
+    -moz-font-feature-settings: normal;
+    -moz-font-language-override: normal;
+    text-rendering: auto;
+    transition: all .65s linear 0s;
+    text-align: center;
+    transition: all 1s cubic-bezier(.99,.82,.11,1.41);
+}
+
+.body {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  margin: 2rem 0;
+}
+
+.body h1 {
+  margin-top: 2rem;
+  color: grey;
+  font-size: 3rem;
+}
+
+.body h1 {
+  text-align: center;
+  overflow: hidden;
+}
+.body h1 span {
+  display: inline-block;
+  position: relative;
+}
+.body h1 span:before, .body h1 span:after {
+  content: "";
+  border-bottom: 3px solid grey;
+  width: 3em;
+  margin: 0 1.5em;
+  position: absolute;
+  bottom: .5em;
+}
+.body h1 span:before {
+  right: 100%;
+}
+.body h1 span:after {
+  left: 100%;
+}
+
 
 /***************************** Projects CSS ***************************/
 
@@ -146,6 +269,8 @@ font-family: 'Lobster', cursive; */
 
 .portfolio {
   margin-bottom: 30px;
+  margin-top: 4rem;
+  background-color: rgba(220, 220, 220, 0.5);
 }
 .port {
   position: relative;
@@ -188,34 +313,27 @@ font-family: 'Lobster', cursive; */
 
 /*================ CounterUp Section Starts ===================*/
 .parallax2 {
-  background-image: linear-gradient(
-      rgba(10, 10, 12, 0.26),
-      rgba(7, 6, 7, 0.164)
-    ),
-    url("./images/BS.jpg");
-  /* Set a specific height */
-  height: 22rem;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgba(220, 220, 220, 0.5);
 }
-
+.icon{
+  margin-top: 2rem;
+  color: rgba(105, 105, 105, 0.534);
+}
 .stat {
   padding-top: 0px;
-
   background-attachment: fixed;
   margin-top: 29px;
 }
 .stat-items {
   border: none;
   margin-top: 6rem;
+  margin-bottom: 6rem;
   transition: 1s;
   padding-bottom: 20px;
-  height: 150px;
+  background: white;
+  box-shadow: 0px 14px 22px -9px #bbcbd8;
 }
-.stat-items .icon {
+.stat-items{
   font-size: 3rem;
   margin-bottom: 1.2rem;
   color: #f1f1f1;
@@ -224,58 +342,152 @@ font-family: 'Lobster', cursive; */
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #d3d3d3;
+  color: rgba(105, 105, 105, 0.534);
   font-size: 1.5rem;
 }
 .stat-items h2 {
   font-weight: bold;
   font-size: 25px;
-  color: rgb(255, 255, 255);
+  color: rgba(105, 105, 105, 0.534);
 }
 @media only screen and (max-width: 768px) {
-  .parallax2 {
-    background-image: linear-gradient(
-        rgba(10, 10, 12, 0.26),
-        rgba(7, 6, 7, 0.164)
-      ),
-      url("./images/BS.jpg");
-    /* Set a specific height */
-    height: 50rem;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  
 }
 
 /*================ CounterUp Section Ends ===================*/
 
 /*================ Courses Section Starts ===================*/
 #courses {
-  background-color: rgba(220, 220, 220, 0.5);
+  background: white;
 }
 
-.courses h1 {
+#news-slider {
+  margin-top: 10px;
+}
+.post-slide {
+  background: rgba(220, 220, 220, 0.5);
+  margin: 20px 15px 20px;
+  border-radius: 15px;
+  padding-top: 1px;
+  box-shadow: 0px 14px 22px -9px #bbcbd8;
+}
+.post-slide .post-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: -12px 15px 8px 15px;
+  margin-left: -10px;
+}
+.post-slide .post-img img {
+  width: 100%;
+  height: 10rem;
+  transform: scale(1, 1);
+  transition: transform 0.2s linear;
+}
+.post-slide:hover .post-img img {
+  transform: scale(1.1, 1.1);
+}
+.post-slide .over-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: linear-gradient(
+    -45deg,
+    rgba(8, 10, 10, 0.685) 0%,
+    rgba(16, 17, 19, 0.692)100%
+  );
+  transition: all 0.5s linear;
+}
+.post-slide:hover .over-layer {
+  opacity: 1;
+  text-decoration: none;
+}
+.post-slide .over-layer i {
+  position: relative;
+  top: 45%;
+  text-align: center;
   display: block;
-  font-family: "Lobster", cursive;
-  font-size: 2rem;
-  color: whitesmoke;
-  margin: 0 auto;
+  color: #fff;
+  font-size: 25px;
+}
+.post-slide .post-content {
+  background: rgba(220, 220, 220, 0.5);
+  padding: 2px 20px 40px;
+  border-radius: 15px;
+}
+.post-slide .post-title a {
+  font-size: 15px;
   font-weight: bold;
+  color: #333;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.post-slide .post-title a:hover {
+  text-decoration: none;
+  color: #3498db;
+}
+.post-slide .post-description {
+  line-height: 24px;
+  color: #808080;
+  margin-bottom: 25px;
+}
+.post-slide .post-date {
+  color: #a9a9a9;
+  font-size: 14px;
+}
+.post-slide .post-date i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: #cfdace;
+}
+.post-slide .read-more {
+  padding: 7px 20px;
+  float: right;
+  font-size: 12px;
+  background: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 10px 20px -10px #1376c5;
+  border-radius: 25px;
   text-transform: uppercase;
 }
-.courses h1::before {
-  content: "COURSES";
-  color: #373b40;
-  font-size: 3rem;
-  display: block;
-  font-family: "Lobster", cursive;
-  font-weight: 300;
-  letter-spacing: 10px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+.post-slide .read-more:hover {
+  background: #3498db;
+  text-decoration: none;
+  color: #fff;
+}
+.owl-carousel {
+  position: relative;
+}
+.owl-next, .owl-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.owl-next {
+  right: 0;
+  display: flex;
+}
+.owl-prev{
+  left: 0;
+  display: flex;
+}
+.fac{
+  font-size: 4rem;
+  color: #2196f3;
   font-weight: bold;
 }
+@media only screen and (max-width: 1280px) {
+  .post-slide .post-content {
+    padding: 0px 15px 25px 15px;
+  }
+}
+
 /*================ Footer Section Starts ===================*/
 .footer {
   background: #373b40;
@@ -455,128 +667,4 @@ font-family: 'Lobster', cursive; */
 .scroll_up .fas:hover {
   color: rgb(255, 255, 255) !important;
   background-color: rgb(14, 9, 9);
-}
-#news-slider {
-  margin-top: 10px;
-}
-.post-slide {
-  background: #fff;
-  margin: 20px 15px 20px;
-  border-radius: 15px;
-  padding-top: 1px;
-  box-shadow: 0px 14px 22px -9px #bbcbd8;
-}
-.post-slide .post-img {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  margin: -12px 15px 8px 15px;
-  margin-left: -10px;
-}
-.post-slide .post-img img {
-  width: 100%;
-  height: 10rem;
-  transform: scale(1, 1);
-  transition: transform 0.2s linear;
-}
-.post-slide:hover .post-img img {
-  transform: scale(1.1, 1.1);
-}
-.post-slide .over-layer {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  background: linear-gradient(
-    -45deg,
-    rgba(8, 10, 10, 0.685) 0%,
-    rgba(16, 17, 19, 0.692)100%
-  );
-  transition: all 0.5s linear;
-}
-.post-slide:hover .over-layer {
-  opacity: 1;
-  text-decoration: none;
-}
-.post-slide .over-layer i {
-  position: relative;
-  top: 45%;
-  text-align: center;
-  display: block;
-  color: #fff;
-  font-size: 25px;
-}
-.post-slide .post-content {
-  background: #fff;
-  padding: 2px 20px 40px;
-  border-radius: 15px;
-}
-.post-slide .post-title a {
-  font-size: 15px;
-  font-weight: bold;
-  color: #333;
-  display: inline-block;
-  text-transform: uppercase;
-  transition: all 0.3s ease 0s;
-}
-.post-slide .post-title a:hover {
-  text-decoration: none;
-  color: #3498db;
-}
-.post-slide .post-description {
-  line-height: 24px;
-  color: #808080;
-  margin-bottom: 25px;
-}
-.post-slide .post-date {
-  color: #a9a9a9;
-  font-size: 14px;
-}
-.post-slide .post-date i {
-  font-size: 20px;
-  margin-right: 8px;
-  color: #cfdace;
-}
-.post-slide .read-more {
-  padding: 7px 20px;
-  float: right;
-  font-size: 12px;
-  background: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 10px 20px -10px #1376c5;
-  border-radius: 25px;
-  text-transform: uppercase;
-}
-.post-slide .read-more:hover {
-  background: #3498db;
-  text-decoration: none;
-  color: #fff;
-}
-.owl-carousel {
-  position: relative;
-}
-.owl-next, .owl-prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-}
-.owl-next {
-  right: 0;
-  display: flex;
-}
-.owl-prev{
-  left: 0;
-  display: flex;
-}
-.fac{
-  font-size: 3rem;
-  color: #2196f3;
-}
-@media only screen and (max-width: 1280px) {
-  .post-slide .post-content {
-    padding: 0px 15px 25px 15px;
-  }
 }
