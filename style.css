@@ -112,6 +112,17 @@ font-family: 'Lobster', cursive; */
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (max-width: 768px) {
+  .carousel-caption{
+    top: 40%;
+  }
+  .carousel-caption h2{
+    font-size: 2.5rem;
+  }
+  .nav__links a{
+    text-align: center;
+  }
+}
 /***************************** Services CSS ***************************/
 .text h3 {
   color: whitesmoke;
@@ -234,7 +245,11 @@ font-family: 'Lobster', cursive; */
 .body h1 span:after {
   left: 100%;
 }
-
+@media only screen and (max-width: 768px) {
+  .body h1{
+    font-size: 2rem;
+  }
+}
 
 /***************************** Projects CSS ***************************/
 
@@ -350,9 +365,7 @@ font-family: 'Lobster', cursive; */
   font-size: 25px;
   color: rgba(105, 105, 105, 0.534);
 }
-@media only screen and (max-width: 768px) {
-  
-}
+
 
 /*================ CounterUp Section Ends ===================*/
 
