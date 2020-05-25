@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+
+/***************************** NavBar CSS ***************************/
+
+.nav {
+  background-color: "transparent !important";
+}
+.nav__header {
+  font-family: "Lobster", cursive;
+  font-size: 1.7rem;
+  color: #fff !important;
+}
+.nav__links a {
+  font-family: "Comic Neue", cursive;
+  font-size: 1.3rem !important;
+  color: #fff !important;
+}
+.nav {
+  transition: 500ms ease;
+  background: transparent;
+}
+.nav.scrolled {
+  background: #373b40;
+  color: white !important;
+}
+.linkcolor.ncol {
+  color: #fff !important;
+}
+.active {
+  border: 1px solid whitesmoke !important;
+}
+/* .animated_link4 a:before {
+    position: relative;
+    content: "";
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+    color: #333;
+    font-size: 0em;
+  }
+  
+  .animated_link4 a:hover:before {
+    content: "\f061";
+    font-family: "FontAwesome";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #f2f2f2;
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+  } */
+@media only screen and (max-width: 768px) {
+  .carousel-caption {
+    top: 40%;
+  }
+  .carousel-caption h2 {
+    font-size: 2.5rem;
+  }
+  .nav__links a {
+    text-align: center;
+  }
+}
+
+/***************************** Banner CSS ***************************/
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(7, 6, 7, 0.801)),
+    url("../../images/banner/home-banner.jpg");
+  /* Set a specific height */
+  height: 30rem;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bread {
+  background: none;
+  text-align: center;
+  margin: 12rem auto;
+}
+.bread h1 {
+  font-family: "Comic Neue", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+}
+.bread span {
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+.career__a {
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+/*================ SCROLL Starts ===================*/
+
+.scroll_up .fas {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 3000;
+  color: white !important;
+  background-color: rgba(55, 57, 58, 0.548);
+  margin-right: 1rem;
+  font-size: 1rem;
+  border-radius: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 3rem;
+  transition: 0.5s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.scroll_up .fas:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(14, 9, 9);
+}
+
+/***************************** Career CSS ***************************/
+.main__career {
+  margin-top: 4rem;
+}
+.main__career h3 {
+  font-family: "Raleway", cursive;
+  text-align: center;
+  font-size: 1.2rem;
+  color: grey;
+  letter-spacing: 2px;
+}
+.main__career h3 span {
+  font-size: 1.5rem;
+  color: rgb(92, 92, 92);
+  font-family: "Lobster", cursive;
+}
+.scroll__down a{
+    text-decoration: none;
+    color: rgb(11, 152, 235) !important;
+}
+.scroll__down p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: gray;
+}
+/***************************** Career Accordion CSS ***************************/
+
+.accordion__titles p {
+  color: grey;
+  font-size: 1rem;
+  font-family: "Comic Neue", cursive;
+  font-weight: bold;
+}
+.accordion__titles {
+  margin-bottom: 1rem;
+  transition: 0.5s ease-in-out;
+}
+.accordion__titles:hover {
+  -webkit-box-shadow: 1px 2px 7px 6px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 1px 2px 7px 6px rgba(204, 204, 204, 1);
+  box-shadow: 1px 2px 7px 6px rgba(204, 204, 204, 1);
+  color: white !important;
+  background-color: rgb(216, 214, 214) !important;
+  cursor: pointer;
+}
+.icons {
+  color: grey;
+  font-size: 3.5rem;
+  margin: 1rem 0;
+}
+.more__details h3 {
+  font-family: "Raleway", cursive;
+  text-align: center;
+  font-size: 1.2rem;
+  color: grey;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 768px) {
+}
+
+/*================ Images Section Starts ===================*/
+.image__container {
+  padding: 5rem 2rem;
+}
+.image__uno img {
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: blur(0);
+  transform: scale(1);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
+.image__three img {
+  border-radius: 1rem;
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: blur(0);
+  transform: scale(1);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
+.image__two img {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: blur(0);
+  transform: scale(1);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
+.image__uno:hover img {
+  filter: blur(1px);
+  transform: scale(1.2);
+}
+.image__two:hover img {
+  filter: blur(1px);
+  transform: scale(1.2);
+}
+.image__three:hover img {
+  filter: blur(1px);
+  transform: scale(1.2);
+}
+
+/*================ Benefits Section Starts ===================*/
+.benefits {
+  background-color: rgb(231, 231, 231);
+}
+.benefits__header h4 {
+  font-size: 1.2rem;
+  color: rgb(73, 73, 73);
+  font-family: "Comic Neue", cursive;
+}
+.icon__i {
+  color: gray;
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+.benefits__icon p{
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.benefit__icon__small__text p{
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2rem;
+    margin-top: 1.9rem;
+}
+.benefit__icon__small__text{
+    margin-bottom: 2rem;
+}
+
+/*================ Career Form Starts ===================*/
+.career__form__head h4{
+    color: grey;
+    font-family: 'Comic Neue', cursive;
+    font-size: 2rem;
+}
+.career__form{
+    margin-top: 3rem;
+}
+label{
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+}
+/*================ Footer Section Starts ===================*/
+.footer {
+  background: #373b40;
+  margin-top: 2rem;
+}
+.footer__about {
+  margin: 2rem auto;
+}
+.footer__about h2 {
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.4rem;
+  color: whitesmoke;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footer__about h2::before {
+  content: "About Us";
+  color: rgba(220, 220, 220, 0.5);
+  font-size: 1.7rem;
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+.footer__about p {
+  color: whitesmoke;
+  font-family: "Comic Neue", cursive;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.map,
+.get__social {
+  margin: 2rem auto;
+}
+.map h1 {
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.4rem;
+  color: whitesmoke;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.map h1::before {
+  content: "Become One Of Us";
+  color: rgba(220, 220, 220, 0.5);
+  font-size: 1.7rem;
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+.get__social h1 {
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.4rem;
+  color: whitesmoke;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.get__social h1::before {
+  content: "Join Us";
+  color: rgba(220, 220, 220, 0.5);
+  font-size: 1.7rem;
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.get__social p {
+  color: whitesmoke;
+  font-family: "Comic Neue", cursive;
+  font-size: 1.2rem;
+}
+
+.social_icons a {
+  text-decoration: none !important;
+}
+.get__social__form {
+  margin: 2rem 0;
+}
+.facebook {
+  color: white !important;
+  background-color: rgb(33, 66, 202);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 13px;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.5s ease-in-out;
+}
+.facebook:hover {
+  transform: translate(0, -15px);
+}
+
+.github {
+  color: white !important;
+  background-color: rgb(24, 26, 27);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 13px;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.5s ease-in-out;
+}
+.github:hover {
+  transform: translate(0, -15px);
+}
+
+.linkedin {
+  color: white !important;
+  background-color: rgb(50, 33, 202);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 13px;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.5s ease-in-out;
+}
+.linkedin:hover {
+  transform: translate(0, -15px);
+}
+.instagram {
+  color: white !important;
+  background-color: rgb(224, 12, 111);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 13px;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.5s ease-in-out;
+}
+.instagram:hover {
+  transform: translate(0, -15px);
+}
+
+/***************** HEADER TITLE ***************/
+.body {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  margin: 2rem 0;
+}
+
+.body h1 {
+  margin-top: 2rem;
+  color: grey;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.body h1 {
+  text-align: center;
+  overflow: hidden;
+}
+.body h1 span {
+  display: inline-block;
+  position: relative;
+}
+.body h1 span:before,
+.body h1 span:after {
+  content: "";
+  border-bottom: 3px solid grey;
+  width: 3em;
+  margin: 0 1.5em;
+  position: absolute;
+  bottom: 0.5em;
+}
+.body h1 span:before {
+  right: 100%;
+}
+.body h1 span:after {
+  left: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .body h1 {
+    font-size: 2rem;
+  }
+}
