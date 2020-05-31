@@ -30,9 +30,7 @@
 .active {
   border: 1px solid whitesmoke !important;
 }
-.navbar-toggler{
-  color: white !important;
-}
+
 /* .animated_link4 a:before {
     position: relative;
     content: "";
@@ -68,6 +66,7 @@
     font-size: 1.7rem;
     margin-left: 0px !important;
     color: #fff !important;
+    margin-top: 0px !important;
   }
 }
 

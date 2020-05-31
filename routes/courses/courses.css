@@ -60,6 +60,13 @@
     .nav__links a{
       text-align: center;
     }
+    .nav__header {
+      font-family: "Lobster", cursive;
+      font-size: 1.7rem;
+      margin-left: 0px !important;
+      color: #fff !important;
+      margin-top: 0px !important;
+    }
   }
 
 /***************************** Banner CSS ***************************/
