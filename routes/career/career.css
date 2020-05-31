@@ -30,6 +30,9 @@
 .active {
   border: 1px solid whitesmoke !important;
 }
+.navbar-toggler{
+  color: white !important;
+}
 /* .animated_link4 a:before {
     position: relative;
     content: "";
@@ -59,6 +62,12 @@
   }
   .nav__links a {
     text-align: center;
+  }
+  .nav__header {
+    font-family: "Lobster", cursive;
+    font-size: 1.7rem;
+    margin-left: 0px !important;
+    color: #fff !important;
   }
 }
 
