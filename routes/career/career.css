@@ -30,6 +30,7 @@
 .active {
   border: 1px solid whitesmoke !important;
 }
+
 /* .animated_link4 a:before {
     position: relative;
     content: "";
@@ -59,6 +60,13 @@
   }
   .nav__links a {
     text-align: center;
+  }
+  .nav__header {
+    font-family: "Lobster", cursive;
+    font-size: 1.7rem;
+    margin-left: 0px !important;
+    color: #fff !important;
+    margin-top: 0px !important;
   }
 }
 
@@ -228,7 +236,20 @@
   filter: blur(1px);
   transform: scale(1.2);
 }
-
+@media only screen and (max-width: 768px) {
+  .image__uno img{
+    height: 13rem !important;
+    width: 100vw;
+  }
+  .image__two img{
+    height: 13rem !important;
+    width: 100vw;
+  }
+  .image__three img{
+    height: 13rem !important;
+    width: 100vw;
+  }
+}
 /*================ Benefits Section Starts ===================*/
 .benefits {
   background-color: rgb(231, 231, 231);
