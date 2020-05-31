@@ -236,7 +236,20 @@
   filter: blur(1px);
   transform: scale(1.2);
 }
-
+@media only screen and (max-width: 768px) {
+  .image__uno img{
+    height: 13rem !important;
+    width: 100vw;
+  }
+  .image__two img{
+    height: 13rem !important;
+    width: 100vw;
+  }
+  .image__three img{
+    height: 13rem !important;
+    width: 100vw;
+  }
+}
 /*================ Benefits Section Starts ===================*/
 .benefits {
   background-color: rgb(231, 231, 231);
