@@ -51,7 +51,7 @@
     -webkit-transition: ease 0.5s;
     transition: ease 0.5s;
   } */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .carousel-caption {
     top: 40%;
   }
@@ -63,7 +63,7 @@
   }
   .nav__header {
     font-family: "Lobster", cursive;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-left: 0px !important;
     color: #fff !important;
     margin-top: 0px !important;
@@ -147,6 +147,7 @@
 .scroll__down a{
     text-decoration: none;
     color: rgb(11, 152, 235) !important;
+    font-weight: bold;
 }
 .scroll__down p{
     margin-top: 1rem;
@@ -280,17 +281,89 @@
 }
 
 /*================ Career Form Starts ===================*/
-.career__form__head h4{
-    color: grey;
-    font-family: 'Comic Neue', cursive;
-    font-size: 2rem;
+.register-left{
+  text-align: center;
+  color: black;
+  padding: 30px;
+  font-family: 'Comic Neue', cursive;
 }
-.career__form{
-    margin-top: 3rem;
+.register-left p{
+  padding: 10px 20px 0;
+  font-size: 1.3rem;
 }
-label{
-    font-family: 'Comic Neue', cursive;
-    font-weight: bold;
+.register-left h3{
+  font-weight: bold;
+  font-size: 3rem;
+  color: #373b40;
+}
+.register-left .btn-primary{
+  border-radius: 1.5rem;
+  border: none;
+  width: 120px;
+  background: #373b40;
+  font-weight: 600;
+  color: #fcfcfc;
+  margin-top: 20px;
+  padding: 10px;
+}
+.register-left .icon{
+  margin-bottom: 18px;
+  margin-top: 60px;
+  width: 80px;
+  animation: mover .5s infinite alternate;
+}
+.icon{
+  color: #373b40;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.register-left .btn-primary:hover{
+  background: #000;
+}
+.register-right{
+  border: none;
+  background: #f8f8f8;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  padding: 50px;
+}
+.register-right h2{
+  text-align: center;
+  margin-bottom: 10px;
+  color: #555;
+}
+.register-form{
+  padding: 30px;
+}
+.register-right .btn-primary{
+  float: right;
+  border-radius: 1.5rem;
+  border: none;
+  width: 120px;
+  background: #373b40;
+  font-weight: 600;
+  color: #fcfcfc;
+  margin-top: 20px;
+  padding: 10px;
+}
+.register-right .btn-primary:hover{
+  background: #000;
+  border: none;
+}
+.career__form__head h5{
+  font-family: 'Comic Neue', cursive;
+}
+.career__form__head{
+  margin-bottom: 2rem;
+}
+@keyframes mover{
+  0%{transform: translateY(0);}
+  100%{transform: translateY(-20px);}
+}
+@media only screen and (max-width: 768px) {
+  .career__form__head{
+    margin-bottom: 0rem;
+  }
 }
 /*================ Footer Section Starts ===================*/
 .footer {
