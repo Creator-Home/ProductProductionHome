@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+
+/***************************** NavBar CSS ***************************/
+
+.nav {
+  background-color: "transparent !important";
+}
+.nav__header {
+  font-family: "Lobster", cursive;
+  font-size: 1.7rem;
+  color: #fff !important;
+}
+.nav__links a {
+  font-family: "Comic Neue", cursive;
+  font-size: 1.3rem !important;
+  color: #fff !important;
+}
+.nav {
+  transition: 500ms ease;
+  background: transparent;
+}
+.nav.scrolled {
+  background: #373b40;
+  color: white !important;
+}
+.linkcolor.ncol {
+  color: #fff !important;
+}
+.active {
+  border: 1px solid whitesmoke !important;
+}
+
+/* .animated_link4 a:before {
+    position: relative;
+    content: "";
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+    color: #333;
+    font-size: 0em;
+  }
+  
+  .animated_link4 a:hover:before {
+    content: "\f061";
+    font-family: "FontAwesome";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #f2f2f2;
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+  } */
+@media only screen and (max-width: 769px) {
+  .carousel-caption {
+    top: 40%;
+  }
+  .carousel-caption h2 {
+    font-size: 2.5rem;
+  }
+  .nav__links a {
+    text-align: center;
+  }
+  .nav__header {
+    font-family: "Lobster", cursive;
+    font-size: 1.5rem;
+    margin-left: 0px !important;
+    color: #fff !important;
+    margin-top: 0px !important;
+  }
+}
+
+/***************************** Banner CSS ***************************/
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(7, 6, 7, 0.801)),
+    url("../../images/banner/home-banner.jpg");
+  /* Set a specific height */
+  height: 30rem;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bread {
+  background: none;
+  text-align: center;
+  margin: 12rem auto;
+}
+.bread h1 {
+  font-family: "Comic Neue", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.bread span {
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+.career__a {
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+/*================ CounterUp Section Starts ===================*/
+.parallax2 {
+    background: rgba(220, 220, 220, 0.5);
+  }
+  .icon{
+    margin-top: 1rem;
+    color: rgba(105, 105, 105, 0.534);
+  }
+  .stat {
+    padding-top: 0px;
+    background-attachment: fixed;
+    margin-top: 29px;
+  }
+  .counter__details{
+      margin-top: 1rem;
+  }
+  .stat-items {
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    transition: 1s;
+    padding-bottom: 20px;
+    background: white;
+    /* box-shadow: 0px 14px 22px -9px #bbcbd8; */
+  }
+  .stat-items{
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    color: #f1f1f1;
+    padding: 0 .5rem;
+  }
+  .stat-items p {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(105, 105, 105, 0.534);
+    font-size: 1rem;
+  }
+  .stat-items h2 {
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(105, 105, 105, 0.534);
+  }
+  
+  
+  /*================ CounterUp Section Ends ===================*/
+
+  /***************************** Services CSS ***************************/
+.text h3 {
+    color: whitesmoke;
+  }
+  .text{
+      color: whitesmoke;
+      text-align: center;
+  }
+  
+  
+  .folded-corner:hover .text{
+      visibility: visible;
+      color: #000000;;
+  }
+  .Services-tab{
+      margin-top:20px;
+      
+  
+  }
+  
+  /*
+    nav link items
+  */
+  .folded-corner{
+    padding: 25px 25px;
+    position: relative;
+    font-size: 90%;
+    text-decoration: none;
+    color: #999; 
+    background: transparent;
+    transition: all ease .5s;
+    border: 1px solid rgba(31,181,172,.9);
+  }
+  .folded-corner:hover{
+      background-color: rgba(4, 5, 5, 0.5);
+  }
+  
+  /*
+    paper fold corner
+  */
+  
+  .folded-corner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0px 0px 0;
+    border-color: #ddd #000;
+    transition: all ease .3s;
+  }
+  
+  /*
+    on li hover make paper fold larger
+  */
+  .folded-corner:hover:before {
+      background-color: #D00003;
+    border-width: 0 50px 50px 0;
+    border-color: #eee #000;
+    
+  }
+  
+  .service_tab_1{
+      background-color: #373b40;
+  }
+  .service_tab_1:hover .fa-icon-image{
+      color: #000;
+      transform: rotate(360deg) scale(1.5);
+  }
+  
+  
+  .fa-icon-image{
+      color: rgba(31,181,172,.9);
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      line-height: 1;
+      font-size-adjust: none;
+      font-stretch: normal;
+      -moz-font-feature-settings: normal;
+      -moz-font-language-override: normal;
+      text-rendering: auto;
+      transition: all .65s linear 0s;
+      text-align: center;
+      transition: all 1s cubic-bezier(.99,.82,.11,1.41);
+  }
+  
+  .body {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    margin: 2rem 0;
+  }
+  
+  .body h1 {
+    margin-top: 2rem;
+    color: grey;
+    font-size: 3rem;
+  }
+  
+  .body h1 {
+    text-align: center;
+    overflow: hidden;
+  }
+  .body h1 span {
+    display: inline-block;
+    position: relative;
+  }
+  .body h1 span:before, .body h1 span:after {
+    content: "";
+    border-bottom: 3px solid grey;
+    width: 3em;
+    margin: 0 1.5em;
+    position: absolute;
+    bottom: .5em;
+  }
+  .body h1 span:before {
+    right: 100%;
+  }
+  .body h1 span:after {
+    left: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    .body h1{
+      font-size: 2rem;
+    }
+  }
+  
+/*================ SCROLL Starts ===================*/
+
+.scroll_up .fas {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 3000;
+  color: white !important;
+  background-color: rgba(55, 57, 58, 0.548);
+  margin-right: 1rem;
+  font-size: 1rem;
+  border-radius: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 3rem;
+  transition: 0.5s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.scroll_up .fas:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(14, 9, 9);
+}
+/***************** HEADER TITLE ***************/
+.body {
+    text-align: center;
+    font-family: "Lobster", cursive;
+    margin: 2rem 0;
+  }
+  
+  .body h1 {
+    margin-top: 2rem;
+    color: grey;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  
+  .body h1 {
+    text-align: center;
+    overflow: hidden;
+  }
+  .body h1 span {
+    display: inline-block;
+    position: relative;
+  }
+  .body h1 span:before,
+  .body h1 span:after {
+    content: "";
+    border-bottom: 3px solid grey;
+    width: 3em;
+    margin: 0 1.5em;
+    position: absolute;
+    bottom: 0.5em;
+  }
+  .body h1 span:before {
+    right: 100%;
+  }
+  .body h1 span:after {
+    left: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    .body h1 {
+      font-size: 2rem;
+    }
+  }
+
+  /***************** ABOUT US ***************/
+.about__details p{
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2rem;
+}
+.about__details{
+    padding: 0 1rem;
+}
+
+/*================ Footer Section Starts ===================*/
+.footer {
+    background: #373b40;
+    margin-top: 2rem;
+  }
+  .footer__about {
+    margin: 2rem auto;
+  }
+  .footer__about h2 {
+    display: block;
+    font-family: "Comic Neue", cursive;
+    font-size: 1.4rem;
+    color: whitesmoke;
+    margin: 0 auto;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .footer__about h2::before {
+    content: "About Us";
+    color: rgba(220, 220, 220, 0.5);
+    font-size: 1.7rem;
+    display: block;
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+  .footer__about p {
+    color: whitesmoke;
+    font-family: "Comic Neue", cursive;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .map,
+  .get__social {
+    margin: 2rem auto;
+  }
+  .map h1 {
+    display: block;
+    font-family: "Comic Neue", cursive;
+    font-size: 1.4rem;
+    color: whitesmoke;
+    margin: 0 auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .map h1::before {
+    content: "Become One Of Us";
+    color: rgba(220, 220, 220, 0.5);
+    font-size: 1.4rem;
+    display: block;
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+  .get__social h1 {
+    display: block;
+    font-family: "Comic Neue", cursive;
+    font-size: 1.4rem;
+    color: whitesmoke;
+    margin: 0 auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .get__social h1::before {
+    content: "Join Us";
+    color: rgba(220, 220, 220, 0.5);
+    font-size: 1.7rem;
+    display: block;
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+  
+  .get__social p {
+    color: whitesmoke;
+    font-family: "Comic Neue", cursive;
+    font-size: 1.2rem;
+  }
+  
+  .social_icons a {
+    text-decoration: none !important;
+  }
+  .get__social__form {
+    margin: 2rem 0;
+  }
+  .facebook {
+    color: white !important;
+    background-color: rgb(33, 66, 202);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 13px;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: 0.5s ease-in-out;
+  }
+  .facebook:hover {
+    transform: translate(0, -15px);
+  }
+  
+  .github {
+    color: white !important;
+    background-color: rgb(24, 26, 27);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 13px;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: 0.5s ease-in-out;
+  }
+  .github:hover {
+    transform: translate(0, -15px);
+  }
+  
+  .linkedin {
+    color: white !important;
+    background-color: rgb(50, 33, 202);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 13px;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: 0.5s ease-in-out;
+  }
+  .linkedin:hover {
+    transform: translate(0, -15px);
+  }
+  .instagram {
+    color: white !important;
+    background-color: rgb(224, 12, 111);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 13px;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: 0.5s ease-in-out;
+  }
+  .instagram:hover {
+    transform: translate(0, -15px);
+  }
+  
