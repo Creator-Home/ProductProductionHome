@@ -245,7 +245,7 @@
 .map h1::before {
   content: "Become One Of Us";
   color: rgba(220, 220, 220, 0.5);
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   display: block;
   font-family: "Comic Neue", cursive;
   font-weight: 300;
